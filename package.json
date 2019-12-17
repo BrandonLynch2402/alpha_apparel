@@ -1,0 +1,24 @@
+{
+  "name": "alpha_apparel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "scripts": {
+    "start": "node server/main.js",
+    "server": "nodemon server/main.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Brandon Lynch",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.1",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  }
+}
